@@ -15,19 +15,19 @@ const beforeTime = document.getElementById("beforeTime");
 const numberElement = document.getElementById('counter');
 
 // -1ボタンのクリックイベント
-minusOne.addEventListener('click', decreaseNumber.bind(null, 1));
+minusOne.addEventListener('touchstart', decreaseNumber.bind(null, 1));
 //-0.5ボタンのクリックイベント
-minusHalf.addEventListener('click', decreaseNumber.bind(null, 0.5));
+minusHalf.addEventListener('touchstart', decreaseNumber.bind(null, 0.5));
 
 // 加算ボタンのクリックイベント
-plusTwo.addEventListener('click', operateNumber.bind(null, 2));
+plusTwo.addEventListener('touchstart', operateNumber.bind(null, 2));
 
-plusFore.addEventListener('click', operateNumber.bind(null, 4));
-plusSix.addEventListener('click', operateNumber.bind(null, 6));
-plusEight.addEventListener('click', operateNumber.bind(null, 8));
-plusTen.addEventListener('click', operateNumber.bind(null, 10));
+plusFore.addEventListener('touchstart', operateNumber.bind(null, 4));
+plusSix.addEventListener('touchstart', operateNumber.bind(null, 6));
+plusEight.addEventListener('touchstart', operateNumber.bind(null, 8));
+plusTen.addEventListener('touchstart', operateNumber.bind(null, 10));
 // clearボタンのクリックイベント
-clear.addEventListener('click',cupClear);
+clear.addEventListener('touchstart',cupClear);
 
 // 数値の操作関数
 function operateNumber(value) {
